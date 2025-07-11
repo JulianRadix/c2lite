@@ -2,8 +2,6 @@
 #include <ws2tcpip.h>
 #include <stdio.h>
 
-#pragma comment(lib, "ws2_32.lib")
-
 int initialize_winsock() {
     WSADATA wsaData;
     return WSAStartup(MAKEWORD(2, 2), &wsaData);
